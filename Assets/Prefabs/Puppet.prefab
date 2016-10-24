@@ -38,6 +38,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000014131163550}
   - 54: {fileID: 54000011190299876}
+  - 114: {fileID: 114000010986403580}
+  - 114: {fileID: 114000012836221472}
   m_Layer: 0
   m_Name: Puppet
   m_TagString: Untagged
@@ -56,7 +58,7 @@ GameObject:
   - 33: {fileID: 33000013965033380}
   - 23: {fileID: 23000010694632218}
   m_Layer: 0
-  m_Name: Lock
+  m_Name: ClavicleL_Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +76,7 @@ GameObject:
   - 135: {fileID: 135000013191844100}
   - 23: {fileID: 23000014064689522}
   m_Layer: 0
-  m_Name: Free
+  m_Name: ClavicleR_Free
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +94,7 @@ GameObject:
   - 135: {fileID: 135000013093278300}
   - 23: {fileID: 23000014243957616}
   m_Layer: 0
-  m_Name: Free
+  m_Name: SholderR_Free
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,7 +111,7 @@ GameObject:
   - 33: {fileID: 33000011170995218}
   - 23: {fileID: 23000012259879588}
   m_Layer: 0
-  m_Name: Extend
+  m_Name: Ribs_Extend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +146,7 @@ GameObject:
   - 33: {fileID: 33000011650703748}
   - 23: {fileID: 23000010205261560}
   m_Layer: 0
-  m_Name: Contract
+  m_Name: ArmL_Contract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,7 +164,7 @@ GameObject:
   - 135: {fileID: 135000010355248986}
   - 23: {fileID: 23000011366676208}
   m_Layer: 0
-  m_Name: Free
+  m_Name: Hip_Free
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,7 +181,7 @@ GameObject:
   - 33: {fileID: 33000011558294428}
   - 23: {fileID: 23000013382547588}
   m_Layer: 0
-  m_Name: Contract
+  m_Name: SholderR_Contract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -196,7 +198,7 @@ GameObject:
   - 33: {fileID: 33000013367685882}
   - 23: {fileID: 23000012143701658}
   m_Layer: 0
-  m_Name: Extend
+  m_Name: ArmR_Extend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,7 +284,7 @@ GameObject:
   - 33: {fileID: 33000013561715264}
   - 23: {fileID: 23000012280362278}
   m_Layer: 0
-  m_Name: Lock
+  m_Name: Head_Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -299,7 +301,7 @@ GameObject:
   - 33: {fileID: 33000010006141478}
   - 23: {fileID: 23000013535554760}
   m_Layer: 0
-  m_Name: Lock
+  m_Name: SholderR_Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -317,7 +319,7 @@ GameObject:
   - 135: {fileID: 135000010178551462}
   - 23: {fileID: 23000012780505146}
   m_Layer: 0
-  m_Name: Free
+  m_Name: ArmR_Free
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -349,7 +351,7 @@ GameObject:
   - 33: {fileID: 33000010049296692}
   - 23: {fileID: 23000013316386902}
   m_Layer: 0
-  m_Name: Extend
+  m_Name: Neck_Extend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -384,7 +386,7 @@ GameObject:
   - 33: {fileID: 33000010337578526}
   - 23: {fileID: 23000010784855282}
   m_Layer: 0
-  m_Name: Contract
+  m_Name: ClavicleR_Contract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,7 +403,7 @@ GameObject:
   - 33: {fileID: 33000013434615468}
   - 23: {fileID: 23000010027160960}
   m_Layer: 0
-  m_Name: Extend
+  m_Name: Head_Extend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -419,7 +421,7 @@ GameObject:
   - 135: {fileID: 135000014212480462}
   - 23: {fileID: 23000013344007158}
   m_Layer: 0
-  m_Name: Free
+  m_Name: Ribs_Free
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -436,7 +438,7 @@ GameObject:
   - 33: {fileID: 33000010833545140}
   - 23: {fileID: 23000010078711364}
   m_Layer: 0
-  m_Name: Lock
+  m_Name: ArmL_Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -453,7 +455,7 @@ GameObject:
   - 33: {fileID: 33000010567518822}
   - 23: {fileID: 23000013976584092}
   m_Layer: 0
-  m_Name: Extend
+  m_Name: ClavicleR_Extend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -488,7 +490,7 @@ GameObject:
   - 33: {fileID: 33000014216134814}
   - 23: {fileID: 23000010152051130}
   m_Layer: 0
-  m_Name: Lock
+  m_Name: SholderL_Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -505,7 +507,7 @@ GameObject:
   - 33: {fileID: 33000011608645310}
   - 23: {fileID: 23000010319346922}
   m_Layer: 0
-  m_Name: Contract
+  m_Name: Neck_Contract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -603,7 +605,7 @@ GameObject:
   - 33: {fileID: 33000010125368434}
   - 23: {fileID: 23000013451734218}
   m_Layer: 0
-  m_Name: Lock
+  m_Name: ClavicleR_Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -620,7 +622,7 @@ GameObject:
   - 33: {fileID: 33000013209759780}
   - 23: {fileID: 23000014088199162}
   m_Layer: 0
-  m_Name: Lock
+  m_Name: Ribs_Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -638,7 +640,7 @@ GameObject:
   - 135: {fileID: 135000013759204566}
   - 23: {fileID: 23000010488915024}
   m_Layer: 0
-  m_Name: Free
+  m_Name: Head_Free
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -688,7 +690,7 @@ GameObject:
   - 33: {fileID: 33000012755356456}
   - 23: {fileID: 23000013765263354}
   m_Layer: 0
-  m_Name: Lock
+  m_Name: Neck_Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -705,7 +707,7 @@ GameObject:
   - 33: {fileID: 33000014244723964}
   - 23: {fileID: 23000010928252630}
   m_Layer: 0
-  m_Name: Contract
+  m_Name: Ribs_Contract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -740,7 +742,7 @@ GameObject:
   - 33: {fileID: 33000011200140448}
   - 23: {fileID: 23000010613906234}
   m_Layer: 0
-  m_Name: Contract
+  m_Name: SholderL_Contract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -758,7 +760,7 @@ GameObject:
   - 135: {fileID: 135000010029044562}
   - 23: {fileID: 23000011191897548}
   m_Layer: 0
-  m_Name: Free
+  m_Name: ClavicleL_Free
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -794,7 +796,7 @@ GameObject:
   - 135: {fileID: 135000012969337820}
   - 23: {fileID: 23000012334390686}
   m_Layer: 0
-  m_Name: Free
+  m_Name: Neck_Free
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -811,7 +813,7 @@ GameObject:
   - 33: {fileID: 33000010803450354}
   - 23: {fileID: 23000011503879764}
   m_Layer: 0
-  m_Name: Contract
+  m_Name: Hip_Contract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -879,7 +881,7 @@ GameObject:
   - 33: {fileID: 33000012211435748}
   - 23: {fileID: 23000012397401074}
   m_Layer: 0
-  m_Name: Lock
+  m_Name: ArmR_Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -959,7 +961,7 @@ GameObject:
   - 33: {fileID: 33000010673933668}
   - 23: {fileID: 23000013377212784}
   m_Layer: 0
-  m_Name: Extend
+  m_Name: SholderL_Extend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -976,7 +978,7 @@ GameObject:
   - 33: {fileID: 33000010909234658}
   - 23: {fileID: 23000012822501696}
   m_Layer: 0
-  m_Name: Extend
+  m_Name: SholderR_Extend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1000,24 +1002,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1000013388848040
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 4000011807500306}
-  - 33: {fileID: 33000010814945766}
-  - 136: {fileID: 136000014117238968}
-  - 23: {fileID: 23000013107136930}
-  m_Layer: 0
-  m_Name: Cylinder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!1 &1000013480926568
 GameObject:
   m_ObjectHideFlags: 1
@@ -1029,7 +1013,7 @@ GameObject:
   - 33: {fileID: 33000014137823532}
   - 23: {fileID: 23000011176539378}
   m_Layer: 0
-  m_Name: Extend
+  m_Name: ClavicleL_Extend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1046,7 +1030,7 @@ GameObject:
   - 33: {fileID: 33000010075789212}
   - 23: {fileID: 23000013025034214}
   m_Layer: 0
-  m_Name: Contract
+  m_Name: ArmR_Contract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1096,7 +1080,7 @@ GameObject:
   - 33: {fileID: 33000010287888106}
   - 23: {fileID: 23000011438945742}
   m_Layer: 0
-  m_Name: Contract
+  m_Name: ClavicleL_Contract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1113,7 +1097,7 @@ GameObject:
   - 33: {fileID: 33000013354503246}
   - 23: {fileID: 23000013686275928}
   m_Layer: 0
-  m_Name: Lock
+  m_Name: Hip_Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1130,7 +1114,7 @@ GameObject:
   - 33: {fileID: 33000012934856796}
   - 23: {fileID: 23000012773943252}
   m_Layer: 0
-  m_Name: Extend
+  m_Name: Hip_Extend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1199,7 +1183,7 @@ GameObject:
   - 135: {fileID: 135000010967342350}
   - 23: {fileID: 23000012900695588}
   m_Layer: 0
-  m_Name: Free
+  m_Name: SholderL_Free
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1216,7 +1200,7 @@ GameObject:
   - 33: {fileID: 33000011458017954}
   - 23: {fileID: 23000013856432994}
   m_Layer: 0
-  m_Name: Extend
+  m_Name: ArmL_Extend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1234,7 +1218,7 @@ GameObject:
   - 135: {fileID: 135000010434444550}
   - 23: {fileID: 23000011072429470}
   m_Layer: 0
-  m_Name: Free
+  m_Name: ArmL_Free
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1251,7 +1235,7 @@ GameObject:
   - 33: {fileID: 33000012077162218}
   - 23: {fileID: 23000011353882252}
   m_Layer: 0
-  m_Name: Contract
+  m_Name: Head_Contract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1320,10 +1304,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012404615982}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012824538766}
   m_RootOrder: 4
@@ -1339,7 +1323,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012318663408}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!4 &4000010660338638
 Transform:
   m_ObjectHideFlags: 1
@@ -1392,7 +1376,7 @@ Transform:
   m_Children:
   - {fileID: 4000014209715056}
   m_Father: {fileID: 4000013124732170}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!4 &4000010810979672
 Transform:
   m_ObjectHideFlags: 1
@@ -1431,7 +1415,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000013124732170}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &4000010934104988
 Transform:
   m_ObjectHideFlags: 1
@@ -1444,17 +1428,17 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012318663408}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!4 &4000010984644952
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013253336500}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012824538766}
   m_RootOrder: 3
@@ -1551,7 +1535,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012323541596}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.215, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -1627,7 +1611,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012318663408}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!4 &4000011728312540
 Transform:
   m_ObjectHideFlags: 1
@@ -1659,19 +1643,6 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000011728312540}
-  m_RootOrder: 0
---- !u!4 &4000011807500306
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013388848040}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.193, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 4000012318663408}
   m_RootOrder: 0
 --- !u!4 &4000011860892116
 Transform:
@@ -1816,7 +1787,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 4000011807500306}
   - {fileID: 4000011601673130}
   - {fileID: 4000013002931606}
   - {fileID: 4000013671764944}
@@ -1850,7 +1820,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012318663408}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!4 &4000012566709424
 Transform:
   m_ObjectHideFlags: 1
@@ -1902,7 +1872,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000013124732170}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &4000012732388064
 Transform:
   m_ObjectHideFlags: 1
@@ -1948,7 +1918,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children: []
   m_Father: {fileID: 4000013124732170}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!4 &4000013002931606
 Transform:
   m_ObjectHideFlags: 1
@@ -1961,7 +1931,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012318663408}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!4 &4000013007905458
 Transform:
   m_ObjectHideFlags: 1
@@ -1974,7 +1944,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000013124732170}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &4000013069932152
 Transform:
   m_ObjectHideFlags: 1
@@ -2039,7 +2009,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 41.377003}
   m_Children: []
   m_Father: {fileID: 4000013124732170}
-  m_RootOrder: 5
+  m_RootOrder: 0
 --- !u!4 &4000013124732170
 Transform:
   m_ObjectHideFlags: 1
@@ -2051,12 +2021,12 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_Children:
+  - {fileID: 4000013113469064}
   - {fileID: 4000010928385304}
   - {fileID: 4000013007905458}
   - {fileID: 4000012876360194}
   - {fileID: 4000012630700564}
   - {fileID: 4000010713449738}
-  - {fileID: 4000013113469064}
   m_Father: {fileID: 4000012732388064}
   m_RootOrder: 0
 --- !u!4 &4000013128353360
@@ -2195,7 +2165,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012318663408}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!4 &4000013811111002
 Transform:
   m_ObjectHideFlags: 1
@@ -2284,7 +2254,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010063320458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.074, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -2352,7 +2322,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
+  - {fileID: 2100000, guid: 076cb203318199f40b651907b5c11be8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -2468,7 +2438,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -2526,7 +2496,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
+  - {fileID: 2100000, guid: 076cb203318199f40b651907b5c11be8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -2613,7 +2583,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -2700,7 +2670,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
+  - {fileID: 2100000, guid: 076cb203318199f40b651907b5c11be8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -2961,7 +2931,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
+  - {fileID: 2100000, guid: 076cb203318199f40b651907b5c11be8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -2990,7 +2960,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -3019,7 +2989,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
+  - {fileID: 2100000, guid: 076cb203318199f40b651907b5c11be8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -3077,7 +3047,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -3222,7 +3192,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
+  - {fileID: 2100000, guid: 076cb203318199f40b651907b5c11be8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -3368,35 +3338,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: c573d4667400a014faaf7da565bb4abb, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!23 &23000013107136930
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013388848040}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -3873,13 +3814,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012755228284}
   m_Mesh: {fileID: 4300000, guid: e4caa8c16e14edf4fa7a43ca76113813, type: 3}
---- !u!33 &33000010814945766
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013388848040}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33000010833545140
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -4153,7 +4087,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013307049180}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -4168,7 +4102,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013902304694}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -4213,7 +4147,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012323541596}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -4228,7 +4162,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011727630034}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 4
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -4243,7 +4177,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010696636098}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -4258,7 +4192,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011027528150}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -4273,7 +4207,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010044167970}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -4288,7 +4222,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012885425462}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 4
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -4303,7 +4237,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010273426546}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -4321,7 +4255,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.1, y: 0.46400008, z: 0}
+  m_ConnectedAnchor: {x: 0.1, y: 0.46399996, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -4339,8 +4273,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 5000
+  m_BreakTorque: 5000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!59 &59000010599470364
@@ -4353,8 +4287,8 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 0
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
-  m_UseSpring: 0
+  m_ConnectedAnchor: {x: 0, y: 0.15, z: 0}
+  m_UseSpring: 1
   m_Spring:
     spring: 0
     damper: 0
@@ -4371,8 +4305,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 1000
+  m_BreakTorque: 10000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!59 &59000011180273914
@@ -4403,8 +4337,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 6000
+  m_BreakTorque: 6000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!59 &59000011309956308
@@ -4417,7 +4351,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.3460002, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 0.34599996, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -4435,8 +4369,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!59 &59000011494720902
@@ -4449,7 +4383,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000005587937, y: 0.55800027, z: 0}
+  m_ConnectedAnchor: {x: 0.0000001303852, y: 0.5580001, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -4467,8 +4401,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!59 &59000012507536848
@@ -4499,8 +4433,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!59 &59000013167426638
@@ -4531,8 +4465,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!59 &59000013316845746
@@ -4577,7 +4511,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000035390173, y: 0.558, z: 0}
+  m_ConnectedAnchor: {x: -0.0000002421433, y: 0.55800015, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -4595,8 +4529,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 3000
+  m_BreakTorque: 3000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!59 &59000014270999086
@@ -4609,7 +4543,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.1, y: 0.46400008, z: 0}
+  m_ConnectedAnchor: {x: -0.1, y: 0.46399996, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -4627,8 +4561,8 @@ HingeJoint:
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
+  m_BreakForce: 5000
+  m_BreakTorque: 5000
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
 --- !u!65 &65000012854247854
@@ -4678,15 +4612,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000012673727170}
   MLock: {fileID: 1000010091606872}
   MExtend: {fileID: 1000013480926568}
   MContract: {fileID: 1000013694622816}
   AttachmentPoint: {fileID: 1000010964887670}
-  DefaultJointForce: 1000
+  DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 800
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000010705088666
 MonoBehaviour:
@@ -4699,16 +4634,90 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000014068063068}
   MLock: {fileID: 1000011304168214}
   MExtend: {fileID: 1000013984423154}
   MContract: {fileID: 1000010282794936}
   AttachmentPoint: {fileID: 1000011742667002}
-  DefaultJointForce: 1000
+  DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 800
+  DefaultJointVelocity: 200
   JointVelocity: 0
+--- !u!114 &114000010986403580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010063320458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b4e9975c1eaae43bc694da36babccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseJointColor: {fileID: 2100000, guid: 98f9bfcad059bd64e94dd9d10b3d931b, type: 2}
+  jointColor: {fileID: 2100000, guid: c573d4667400a014faaf7da565bb4abb, type: 2}
+  mainBodyColor: {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
+  secondaryBodyColor: {fileID: 2100000, guid: 076cb203318199f40b651907b5c11be8, type: 2}
+  armourColor: {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
+  weaponColor: {fileID: 2100000, guid: 576492cdea4377647a11dc5f54799517, type: 2}
+  baseJointsArray:
+  - {fileID: 1000010456563188}
+  - {fileID: 1000011275363852}
+  - {fileID: 1000010185152090}
+  - {fileID: 1000010226836016}
+  - {fileID: 1000010954632624}
+  - {fileID: 1000012673727170}
+  - {fileID: 1000013965468918}
+  - {fileID: 1000014068063068}
+  - {fileID: 1000012732740056}
+  - {fileID: 1000012008349142}
+  jointArray:
+  - {fileID: 1000013756039318}
+  - {fileID: 1000013772168232}
+  - {fileID: 1000012755228284}
+  - {fileID: 1000011975951236}
+  - {fileID: 1000010239529290}
+  - {fileID: 1000012167877940}
+  - {fileID: 1000011868790398}
+  - {fileID: 1000011348019494}
+  - {fileID: 1000011125505646}
+  - {fileID: 1000010890895682}
+  - {fileID: 1000013301137118}
+  - {fileID: 1000010573090234}
+  - {fileID: 1000012988332536}
+  - {fileID: 1000010580171370}
+  - {fileID: 1000013522495252}
+  - {fileID: 1000010091606872}
+  - {fileID: 1000013480926568}
+  - {fileID: 1000013694622816}
+  - {fileID: 1000011386125876}
+  - {fileID: 1000013253336500}
+  - {fileID: 1000012404615982}
+  - {fileID: 1000011304168214}
+  - {fileID: 1000013984423154}
+  - {fileID: 1000010282794936}
+  - {fileID: 1000012142980714}
+  - {fileID: 1000010977905244}
+  - {fileID: 1000011405813092}
+  - {fileID: 1000010861615362}
+  - {fileID: 1000011268148050}
+  - {fileID: 1000014187506832}
+  mainBodyArray:
+  - {fileID: 1000010730882162}
+  - {fileID: 1000012717019698}
+  - {fileID: 1000014257765538}
+  - {fileID: 1000012775120662}
+  secondaryBodyArray:
+  - {fileID: 1000011365161200}
+  - {fileID: 1000013923654278}
+  - {fileID: 1000010765930986}
+  - {fileID: 1000011648809348}
+  - {fileID: 1000013666777584}
+  - {fileID: 1000012086640060}
+  armourArray: []
+  weaponArray: []
 --- !u!114 &114000011795765974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4720,15 +4729,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000012732740056}
   MLock: {fileID: 1000012142980714}
   MExtend: {fileID: 1000010977905244}
   MContract: {fileID: 1000011405813092}
   AttachmentPoint: {fileID: 1000012979246198}
-  DefaultJointForce: 1000
+  DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 800
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000012183171756
 MonoBehaviour:
@@ -4741,16 +4751,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000011275363852}
   MLock: {fileID: 1000011975951236}
   MExtend: {fileID: 1000010239529290}
   MContract: {fileID: 1000012167877940}
   AttachmentPoint: {fileID: 1000011602891074}
-  DefaultJointForce: 1000
+  DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 800
+  DefaultJointVelocity: 200
   JointVelocity: 0
+--- !u!114 &114000012836221472
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010063320458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ab995bbd3ec03740b06b7aef6ce4856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turn: 0
 --- !u!114 &114000013443994996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4762,15 +4785,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000010185152090}
   MLock: {fileID: 1000011868790398}
   MExtend: {fileID: 1000011348019494}
   MContract: {fileID: 1000011125505646}
   AttachmentPoint: {fileID: 1000013858058748}
-  DefaultJointForce: 1000
+  DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 800
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000013673441912
 MonoBehaviour:
@@ -4783,15 +4807,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000013965468918}
   MLock: {fileID: 1000011386125876}
   MExtend: {fileID: 1000013253336500}
   MContract: {fileID: 1000012404615982}
   AttachmentPoint: {fileID: 1000013669783784}
-  DefaultJointForce: 1000
+  DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 800
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000013832771040
 MonoBehaviour:
@@ -4804,15 +4829,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000010226836016}
   MLock: {fileID: 1000010890895682}
   MExtend: {fileID: 1000013301137118}
   MContract: {fileID: 1000010573090234}
   AttachmentPoint: {fileID: 1000012988694228}
-  DefaultJointForce: 1000
+  DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 800
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000014197960050
 MonoBehaviour:
@@ -4825,15 +4851,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000010954632624}
   MLock: {fileID: 1000012988332536}
   MExtend: {fileID: 1000010580171370}
   MContract: {fileID: 1000013522495252}
   AttachmentPoint: {fileID: 1000012083782426}
-  DefaultJointForce: 1000
+  DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 800
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000014247364708
 MonoBehaviour:
@@ -4846,15 +4873,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000012008349142}
   MLock: {fileID: 1000010861615362}
   MExtend: {fileID: 1000011268148050}
   MContract: {fileID: 1000014187506832}
   AttachmentPoint: {fileID: 1000013064088718}
-  DefaultJointForce: 1000
+  DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 800
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000014282596666
 MonoBehaviour:
@@ -4867,15 +4895,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000010456563188}
   MLock: {fileID: 1000013756039318}
   MExtend: {fileID: 1000013772168232}
   MContract: {fileID: 1000012755228284}
   AttachmentPoint: {fileID: 1000011746818672}
-  DefaultJointForce: 1000
+  DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 800
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!135 &135000010029044562
 SphereCollider:
@@ -5080,19 +5109,6 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010765930986}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136000014117238968
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013388848040}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

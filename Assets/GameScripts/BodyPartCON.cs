@@ -3,8 +3,11 @@ using System.Collections;
 
 public class BodyPartCON : MonoBehaviour {
 
-    //Hinge Varables
+    //Turn Varables
+    public GameObject owner;
+    PuppetCON PuppetCON;
 
+    //Hinge Varables
     public JState State;
 
     public GameObject MFree;
@@ -26,20 +29,31 @@ public class BodyPartCON : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        owner = transform.root.gameObject;
+        PuppetCON = owner.GetComponent<PuppetCON>();
         Rb = GetComponent<Rigidbody>();
         Hinge = GetComponent<HingeJoint>();
         Motor = Hinge.motor;
-        SetState(JState.Lock);
+        SetState(JState.Free);
         JointVis(State);
         JointForce = DefaultJointForce;
-        JointVelocity = DefaultJointVelocity;
-        Rb.mass = 0;
+        JointVelocity = DefaultJointVelocity;        
+        Rb.drag = 2;
+        Rb.angularDrag = 2;
+        Rb.velocity = new Vector3(0,0,0);
     }
 
     void OnMouseDown()
     {
+        if (PuppetCON.turn == true)
         CycleState();
         JointVis(State);
+    }
+
+    void OnJointBreak()
+    {
+        Rb.useGravity = true;
+        print(gameObject);
     }
 
     //State Management
@@ -111,25 +125,21 @@ public class BodyPartCON : MonoBehaviour {
     {
         State = JState.Lock;
         UpdateJoint(JointForce, 0);
-        print("Lock" + gameObject.name);
     }
     void JointFree()
     {
         State = JState.Free;
         UpdateJoint(0, 0);
-        print("Free" + gameObject.name);
     }
     void JointContract()
     {
         State = JState.Contract;
         UpdateJoint(JointForce, (JointVelocity * -1));
-        print("Contract" + gameObject.name);
     }
     void JointExtend()
     {
         State = JState.Extend;
         UpdateJoint(JointForce, JointVelocity);
-        print("Extend" + gameObject.name);
     }
     void UpdateJoint(float _inForce, float _inVelocity)
     {
