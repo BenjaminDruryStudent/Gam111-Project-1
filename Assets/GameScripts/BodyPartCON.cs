@@ -3,6 +3,8 @@ using System.Collections;
 
 public class BodyPartCON : MonoBehaviour {
 
+    public float bodyPartHealth = 10;
+    
     //Turn Varables
     public GameObject owner;
     PuppetCON PuppetCON;
@@ -28,8 +30,7 @@ public class BodyPartCON : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
-        owner = transform.root.gameObject;
+    void Start () {        
         PuppetCON = owner.GetComponent<PuppetCON>();
         Rb = GetComponent<Rigidbody>();
         Hinge = GetComponent<HingeJoint>();
@@ -48,7 +49,7 @@ public class BodyPartCON : MonoBehaviour {
         if (PuppetCON.turn == true)
         CycleState();
         JointVis(State);
-    }
+    }    
 
     void OnJointBreak()
     {
@@ -146,6 +147,10 @@ public class BodyPartCON : MonoBehaviour {
         Motor.force = _inForce * 10;
         Motor.targetVelocity = _inVelocity;
         Hinge.motor = Motor;
+    }    
+    public void BreakJoint(Vector3 Direction)
+    {
+        Rb.AddForce(Direction * Hinge.breakForce);
     }
 }
 
