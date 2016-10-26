@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour {
     public GameObject Player2Puppet;
     PuppetCON Player1PuppetCON;
     PuppetCON Player2PuppetCON;
+    Text Player
 
     //RunTurn Varables
     bool runTurnState = false;

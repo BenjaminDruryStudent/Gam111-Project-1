@@ -30,6 +30,8 @@ public class PlayerCON : MonoBehaviour {
 		{
             cameraPitch.transform.Rotate((Input.GetAxisRaw("Vertical")*cameraSpeed),0 ,0);
 		}
+        if (Input.GetKeyDown("Escape"))
+            Application.Quit();
 	}
 
 	void UpdateCamera()
