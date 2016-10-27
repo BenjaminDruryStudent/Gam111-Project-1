@@ -631,7 +631,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012732388064}
   m_Layer: 0
-  m_Name: AttachementPoint L
+  m_Name: AttachementPoint R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -891,6 +891,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1000012610319364
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013889528684}
+  - 33: {fileID: 33000012696082406}
+  - 23: {fileID: 23000010377494644}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000012660972202
 GameObject:
   m_ObjectHideFlags: 1
@@ -992,7 +1009,7 @@ GameObject:
   - 23: {fileID: 23000010256440306}
   - 135: {fileID: 135000013190992756}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,6 +1099,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000013046784386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011757998026}
+  - 33: {fileID: 33000013766269244}
+  - 23: {fileID: 23000011808371928}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000013057494736
 GameObject:
   m_ObjectHideFlags: 1
@@ -1091,7 +1125,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011917948884}
   m_Layer: 0
-  m_Name: AttachementPoint R
+  m_Name: AttachementPoint L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2051,6 +2085,20 @@ Transform:
   - {fileID: 4000013918972430}
   m_Father: {fileID: 4000014113500526}
   m_RootOrder: 0
+--- !u!4 &4000011757998026
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013046784386}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 1.724, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
+  m_Children:
+  - {fileID: 4000013889528684}
+  m_Father: {fileID: 4000014131163550}
+  m_RootOrder: 1
 --- !u!4 &4000011800474958
 Transform:
   m_ObjectHideFlags: 1
@@ -2677,6 +2725,19 @@ Transform:
   - {fileID: 4000012824538766}
   m_Father: {fileID: 4000011860892116}
   m_RootOrder: 4
+--- !u!4 &4000013889528684
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012610319364}
+  m_LocalRotation: {x: -0.038753852, y: 0.44932947, z: -0.8925021, w: 0.0064180563}
+  m_LocalPosition: {x: -0.084, y: 0.235, z: -0.139}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 53.270004, y: 7.004, z: -175.688}
+  m_Children: []
+  m_Father: {fileID: 4000011757998026}
+  m_RootOrder: 0
 --- !u!4 &4000013917623160
 Transform:
   m_ObjectHideFlags: 1
@@ -2797,6 +2858,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000011289763486}
+  - {fileID: 4000011757998026}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &4000014209715056
@@ -3064,6 +3126,35 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: afa2c54b898612044b1013288029cb20, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &23000010377494644
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012610319364}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: a95035da5f096e046b7222b5f6790e58, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -3673,6 +3764,35 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: c573d4667400a014faaf7da565bb4abb, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &23000011808371928
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013046784386}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 98f9bfcad059bd64e94dd9d10b3d931b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -4840,6 +4960,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012988332536}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &33000012696082406
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012610319364}
+  m_Mesh: {fileID: 4300000, guid: 5fc5c03c7d47aab4c86f5b852607925b, type: 3}
 --- !u!33 &33000012755356456
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -4959,6 +5086,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010185152090}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &33000013766269244
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013046784386}
+  m_Mesh: {fileID: 4300002, guid: 6cee8a1e3e7ec4246a007a08f8665e6c, type: 3}
 --- !u!33 &33000013858233222
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -5757,7 +5891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed998a01666cab44b51548ae53b0460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponDamage: 30
+  weaponDamage: 80
   Owner: {fileID: 1000010063320458}
 --- !u!114 &114000010447928032
 MonoBehaviour:
@@ -5770,7 +5904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed998a01666cab44b51548ae53b0460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponDamage: 20
+  weaponDamage: 80
   Owner: {fileID: 1000010063320458}
 --- !u!114 &114000010677684162
 MonoBehaviour:
@@ -5783,7 +5917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 50
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000012673727170}
@@ -5793,7 +5927,7 @@ MonoBehaviour:
   AttachmentPoint: {fileID: 1000010964887670}
   DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 100
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000010705088666
 MonoBehaviour:
@@ -5806,7 +5940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 30
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000014068063068}
@@ -5816,7 +5950,7 @@ MonoBehaviour:
   AttachmentPoint: {fileID: 1000011742667002}
   DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 100
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000010885714828
 MonoBehaviour:
@@ -5829,7 +5963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed998a01666cab44b51548ae53b0460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponDamage: 80
+  weaponDamage: 120
   Owner: {fileID: 1000010063320458}
 --- !u!114 &114000010986403580
 MonoBehaviour:
@@ -5852,14 +5986,16 @@ MonoBehaviour:
   - {fileID: 1000010456563188}
   - {fileID: 1000011275363852}
   - {fileID: 1000010185152090}
-  - {fileID: 1000010226836016}
   - {fileID: 1000010954632624}
+  - {fileID: 1000012660972202}
   - {fileID: 1000012673727170}
   - {fileID: 1000013965468918}
   - {fileID: 1000014068063068}
+  - {fileID: 1000013445237852}
   - {fileID: 1000012732740056}
   - {fileID: 1000012008349142}
-  - {fileID: 1000013445237852}
+  - {fileID: 1000010226836016}
+  - {fileID: 1000013046784386}
   jointArray:
   - {fileID: 1000013756039318}
   - {fileID: 1000013772168232}
@@ -5870,12 +6006,9 @@ MonoBehaviour:
   - {fileID: 1000011868790398}
   - {fileID: 1000011348019494}
   - {fileID: 1000011125505646}
-  - {fileID: 1000010890895682}
-  - {fileID: 1000013301137118}
-  - {fileID: 1000010573090234}
-  - {fileID: 1000012988332536}
-  - {fileID: 1000010580171370}
-  - {fileID: 1000013522495252}
+  - {fileID: 1000013175287504}
+  - {fileID: 1000010443146974}
+  - {fileID: 1000013269114312}
   - {fileID: 1000010091606872}
   - {fileID: 1000013480926568}
   - {fileID: 1000013694622816}
@@ -5885,15 +6018,21 @@ MonoBehaviour:
   - {fileID: 1000011304168214}
   - {fileID: 1000013984423154}
   - {fileID: 1000010282794936}
+  - {fileID: 1000010786928682}
+  - {fileID: 1000013726894642}
+  - {fileID: 1000013532616264}
   - {fileID: 1000012142980714}
   - {fileID: 1000010977905244}
   - {fileID: 1000011405813092}
   - {fileID: 1000010861615362}
   - {fileID: 1000011268148050}
   - {fileID: 1000014187506832}
-  - {fileID: 1000010786928682}
-  - {fileID: 1000013726894642}
-  - {fileID: 1000013532616264}
+  - {fileID: 1000010890895682}
+  - {fileID: 1000013301137118}
+  - {fileID: 1000010573090234}
+  - {fileID: 1000012988332536}
+  - {fileID: 1000010580171370}
+  - {fileID: 1000013522495252}
   mainBodyArray:
   - {fileID: 1000010730882162}
   - {fileID: 1000012717019698}
@@ -5901,17 +6040,18 @@ MonoBehaviour:
   - {fileID: 1000012775120662}
   secondaryBodyArray:
   - {fileID: 1000011365161200}
-  - {fileID: 1000013923654278}
-  - {fileID: 1000010765930986}
   - {fileID: 1000011648809348}
+  - {fileID: 1000010765930986}
   - {fileID: 1000013666777584}
   - {fileID: 1000012086640060}
+  - {fileID: 1000011365161200}
   armourArray:
   - {fileID: 1000012378018564}
   - {fileID: 1000010682324102}
   - {fileID: 1000011197716068}
   weaponArray:
   - {fileID: 1000010883555980}
+  - {fileID: 1000012610319364}
 --- !u!114 &114000011795765974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5923,7 +6063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 100
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000012732740056}
@@ -5946,7 +6086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 100
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000011275363852}
@@ -5956,7 +6096,7 @@ MonoBehaviour:
   AttachmentPoint: {fileID: 1000011602891074}
   DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 100
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000012573506716
 MonoBehaviour:
@@ -5969,7 +6109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 30
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000012660972202}
@@ -5979,7 +6119,7 @@ MonoBehaviour:
   AttachmentPoint: {fileID: 1000010878619416}
   DefaultJointForce: 1000
   JointForce: 0
-  DefaultJointVelocity: 100
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000012588048316
 MonoBehaviour:
@@ -5992,7 +6132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 30
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000013445237852}
@@ -6002,7 +6142,7 @@ MonoBehaviour:
   AttachmentPoint: {fileID: 1000013677816190}
   DefaultJointForce: 1000
   JointForce: 0
-  DefaultJointVelocity: 100
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000012836221472
 MonoBehaviour:
@@ -6015,7 +6155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab995bbd3ec03740b06b7aef6ce4856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turn: 0
+  turn: 1
+  turnToken: {fileID: 1000013046784386}
 --- !u!114 &114000013443994996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6027,7 +6168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 50
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000010185152090}
@@ -6050,7 +6191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 40
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000013965468918}
@@ -6060,7 +6201,7 @@ MonoBehaviour:
   AttachmentPoint: {fileID: 1000013669783784}
   DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 100
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000013832771040
 MonoBehaviour:
@@ -6073,7 +6214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 40
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000010226836016}
@@ -6083,7 +6224,7 @@ MonoBehaviour:
   AttachmentPoint: {fileID: 1000012988694228}
   DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 100
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000014197960050
 MonoBehaviour:
@@ -6096,7 +6237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 30
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000010954632624}
@@ -6106,7 +6247,7 @@ MonoBehaviour:
   AttachmentPoint: {fileID: 1000012083782426}
   DefaultJointForce: 5000
   JointForce: 0
-  DefaultJointVelocity: 100
+  DefaultJointVelocity: 200
   JointVelocity: 0
 --- !u!114 &114000014247364708
 MonoBehaviour:
@@ -6119,7 +6260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 100
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000012008349142}
@@ -6142,7 +6283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e8a872af9afc24cae8db83bbfc545a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bodyPartHealth: 100
+  bodyPartHealth: 10
   owner: {fileID: 1000010063320458}
   State: 0
   MFree: {fileID: 1000010456563188}

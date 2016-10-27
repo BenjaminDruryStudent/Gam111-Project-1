@@ -46,7 +46,7 @@ public class BodyPartCON : MonoBehaviour {
 
     void OnMouseDown()
     {
-        if (PuppetCON.turn == true)
+		if (PuppetCON.turn == true && Hinge != null)
         CycleState();
         JointVis(State);
     }    
@@ -54,7 +54,6 @@ public class BodyPartCON : MonoBehaviour {
     void OnJointBreak()
     {
         Rb.useGravity = true;
-        print(gameObject);
     }
 
     //State Management

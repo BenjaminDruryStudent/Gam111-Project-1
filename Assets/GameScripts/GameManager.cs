@@ -15,7 +15,9 @@ public class GameManager : MonoBehaviour {
     public GameObject Player2Puppet;
     PuppetCON Player1PuppetCON;
     PuppetCON Player2PuppetCON;
-    Text Player
+
+	//UI Vars
+	public Text UIroundTimer;
 
     //RunTurn Varables
     bool runTurnState = false;
@@ -25,6 +27,8 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		SetTimeAndTurns (MaxTimeSeconds,Turns);
 		SetTime (0);
+
+		UIroundTimer.text = Turns.ToString();
 
         Player1PuppetCON = Player1Puppet.GetComponent<PuppetCON>();
         Player1PuppetCON.turn = true;
@@ -51,23 +55,22 @@ public class GameManager : MonoBehaviour {
 	{
         MaxTimeSeconds = _time;
         Turns = _turns;
-        turnBetweenTime = MaxTimeSeconds / Turns;
-        print(turnBetweenTime);
+		turnBetweenTime = MaxTimeSeconds / Turns;
 	}
 	void TurnEnd()
 	{
 		if (Player1 == true) {
 			//any transitions from player one to player two go here.
 			Player1 = false;
-            Player1PuppetCON.turn = false;
-            Player2PuppetCON.turn = true;
+			Player1PuppetCON.Turn (false);
+			Player2PuppetCON.Turn (true);
 			Debug.Log ("Player 1 ends turn");
 			return;
 		}
 		if (Player1 != true) {
 			//any transitons from player 2 to player one go here.
 			Debug.Log ("Player 2 ends turn");            
-            Player2PuppetCON.turn = false;
+			Player2PuppetCON.Turn (false);
             Player1 = true;
             timeToRun = turnBetweenTime;
             runTurnState = true;
@@ -85,7 +88,9 @@ public class GameManager : MonoBehaviour {
             if (timeToRun <= 0)
             {
                 runTurnState = false;
-                Player1PuppetCON.turn = true;
+				Player1PuppetCON.Turn (true);
+				Turns--;
+				UIroundTimer.text = Turns.ToString();
             }                
         }
     }

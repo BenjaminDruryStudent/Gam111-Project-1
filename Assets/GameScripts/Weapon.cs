@@ -15,7 +15,7 @@ public class Weapon : MonoBehaviour {
     void OnCollisionEnter(Collision other)
     {
         BodyPartCON hitPart = other.gameObject.GetComponent<BodyPartCON>();
-        if (other != null)
+		if (other != null && hitPart != null)
         {
             if (hitPart.owner != Owner)
             {
