@@ -16,6 +16,16 @@ public class GameManager : MonoBehaviour {
     PuppetCON Player1PuppetCON;
     PuppetCON Player2PuppetCON;
 
+	//camera stuff
+	public GameObject PlayerCON;
+	public GameObject camera;
+	int cameraTarget = 1;
+	Vector3 PlayerConOffset;
+	public float CamLerpSpeed = .1f;
+	public float CamLerpZoom = .1f;
+	public float cameraLengthPlayer = -2.5f;
+	public float cameraLengthWorld = -4;
+
 	//UI Vars
 	public Text UIroundTimer;
 
@@ -34,6 +44,8 @@ public class GameManager : MonoBehaviour {
         Player1PuppetCON.turn = true;
         Player2PuppetCON = Player2Puppet.GetComponent<PuppetCON>();
         Player2PuppetCON.turn = false;
+
+		PlayerConOffset = PlayerCON.transform.position;
 	}
 	
 	// Update is called once per frame
@@ -41,7 +53,8 @@ public class GameManager : MonoBehaviour {
 		if (Input.GetButtonDown("Turn"))
 		{
 			TurnEnd ();
-		}		
+		}
+		CameraUpdate ();
 	}
 
     // Fixed Update runs when physics runs
@@ -64,17 +77,18 @@ public class GameManager : MonoBehaviour {
 			Player1 = false;
 			Player1PuppetCON.Turn (false);
 			Player2PuppetCON.Turn (true);
-			Debug.Log ("Player 1 ends turn");
+			cameraTarget = 2;
 			return;
 		}
 		if (Player1 != true) {
-			//any transitons from player 2 to player one go here.
-			Debug.Log ("Player 2 ends turn");            
+			//any transitons from player 2 to player one go here.			           
 			Player2PuppetCON.Turn (false);
             Player1 = true;
             timeToRun = turnBetweenTime;
             runTurnState = true;
             RunTurn();
+			cameraTarget = 0;
+			return;
 		}			
 	}
     void RunTurn()
@@ -91,6 +105,7 @@ public class GameManager : MonoBehaviour {
 				Player1PuppetCON.Turn (true);
 				Turns--;
 				UIroundTimer.text = Turns.ToString();
+				cameraTarget = 1;
             }                
         }
     }
@@ -99,5 +114,20 @@ public class GameManager : MonoBehaviour {
 		Time.timeScale = _intime;
 		if (Time.timeScale > 0)
 			Time.fixedDeltaTime = Time.timeScale * 0.02f;
+	}
+	void CameraUpdate()
+	{
+		if (cameraTarget == 0) {
+			PlayerCON.transform.position = Vector3.Lerp (PlayerCON.transform.position,(Vector3.zero + PlayerConOffset),CamLerpSpeed);
+				return;
+		}
+		if (cameraTarget == 1) {
+			PlayerCON.transform.position = Vector3.Lerp (PlayerCON.transform.position,(Player1Puppet.transform.position + PlayerConOffset), CamLerpSpeed);
+				return;
+		}
+		if (cameraTarget == 2) {
+			PlayerCON.transform.position = Vector3.Lerp (PlayerCON.transform.position,(Player2Puppet.transform.position + PlayerConOffset),CamLerpSpeed);
+				return;
+			}
 	}
 }
